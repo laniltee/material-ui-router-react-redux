@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#layout{
+  display: flex;
+}
+
+#navBarWrapper{
+  width: 25%;
+  background-color: white;
+  height: 100%;
+  min-height: 188px;
+}
+
+#layoutWrapper {
+  width: 75%;
+}
+
+a {
+  text-decoration: none;
+}
