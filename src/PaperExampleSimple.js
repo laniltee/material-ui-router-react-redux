@@ -37,12 +37,13 @@ class PaperExampleSimple extends React.Component {
                         :
                         null
                 }
-
-                <Paper style={style} zDepth={1}/>
-                <Paper style={style} zDepth={2}/>
-                <Paper style={style} zDepth={3}/>
-                <Paper style={style} zDepth={4}/>
-                <Paper style={style} zDepth={5}/>
+                <div className={'paperContainer'}>
+                    <Paper style={style} zDepth={1}/>
+                    <Paper style={style} zDepth={2}/>
+                    <Paper style={style} zDepth={3}/>
+                    <Paper style={style} zDepth={4}/>
+                    <Paper style={style} zDepth={5}/>
+                </div>
                 <p>Deck Loading Status: {this.props.decks.per_page}</p>
             </div>
         )
@@ -52,6 +53,7 @@ class PaperExampleSimple extends React.Component {
 function mapStateToProps(state, ownProps) {
     return {
         decks: state.decks.decks,
+        data: state.decks.decks.data,
         loading: state.decks.decksLoading
     }
 }

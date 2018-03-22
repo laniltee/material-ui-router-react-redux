@@ -1,5 +1,7 @@
 import React from 'react';
 import Paper from 'material-ui/Paper';
+import {connect} from 'react-redux'
+import {bindActionCreators} from 'redux'
 
 const style = {
     height: 100,
@@ -10,7 +12,7 @@ const style = {
 };
 
 const PaperExampleCircle = () => (
-    <div>
+    <div className={'paperContainer'}>
         <Paper style={style} zDepth={1} circle={true} />
         <Paper style={style} zDepth={2} circle={true} />
         <Paper style={style} zDepth={3} circle={true} />

@@ -8,3 +8,7 @@ const middleware = applyMiddleware(logger, thunk);
 const store = createStore(reducers, middleware);
 
 export default store;
+
+
+//asnei94
+//Sam1qaz@

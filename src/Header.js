@@ -12,9 +12,10 @@ class Header extends Component {
 
     handleToggle = () => this.setState({open: !this.state.open});
 
-    render(){
+    render() {
         return (
             <div id={'header'}>
+
                 <AppBar
                     iconClassNameRight="muidocs-icon-navigation-expand-more"
                     onLeftIconButtonClick={this.handleToggle}
@@ -23,10 +24,12 @@ class Header extends Component {
                     }}
                     title={"Pearson React"}
                 />
-                <Drawer open={this.state.open} openSecondary={true}>
-                    <MenuItem>Menu Item</MenuItem>
-                    <MenuItem>Menu Item 2</MenuItem>
-                </Drawer>
+                <div className={'layout'}>
+                    <Drawer open={this.state.open} openSecondary={true}>
+                        <MenuItem>Menu Item</MenuItem>
+                        <MenuItem>Menu Item 2</MenuItem>
+                    </Drawer>
+                </div>
             </div>
         )
     }

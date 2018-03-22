@@ -19,7 +19,7 @@ class App extends Component {
                     <div className="App">
                         <Header/>
 
-                        <div id={'layout'}>
+                        <div className={'layout'}>
                             <div id={'navBarWrapper'}>
                                 <LeftNavBar/>
                             </div>
